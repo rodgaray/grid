@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Columnas</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Header</h1>
+        </div>
+    </header>
+    <div class="container">
+    	<!-- Acá arranco una fila -->
+        <section class="main row">
+            <!-- <article class="col-xs-12 col-sm-8 col-md-9 col-lg-9"> -->
+            <article class="col-xs-12 col-sm-8 col-md-9">
+                <p>
+                	<h3>Article - Main</h3>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam at ducimus, delectus labore, repellendus pariatur accusantium culpa explicabo suscipit, nam architecto! Iusto reprehenderit debitis sequi! Quasi cupiditate accusantium eligendi ipsam.
+                </p>
+            </article>
+            <!-- La definicion de columna col-md si no la defino queda con el valor de la col-sm
+			Lo mismo con la col-lg, si no la defino toma el valor de la col-md -->
+            <!-- <aside class="col-xs-12 col-sm-4 col-md-3 col-lg-3"> -->
+            <aside class="col-xs-12 col-sm-4 col-md-3">
+                <p>
+                	<h3>Aside - Main</h3>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas magni, fugit necessitatibus. Nulla repellendus, adipisci consectetur, dolor eius reprehenderit numquam soluta tempora autem doloribus facilis, explicabo natus quaerat alias voluptatibus?
+                </p>
+            </aside>
+        </section>
+        
+		<!-- Creo una nueva fila "row" -->
+		<div class="row"> 
+			<!-- Para generar las columnas: .col-md-3*4 -->
+			<div class="color1 col-xs-12 col-sm-6 col-md-3">
+				<p>
+					<h3>Columna 1</h3>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo placeat enim vitae laboriosam quis rerum accusamus, excepturi, dolore maxime, dolores velit itaque nostrum distinctio deserunt eius, similique recusandae optio hic!
+				</p>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-3">
+				<p>
+					<h3>Columna 2</h3>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora consequatur culpa eveniet magni rerum eligendi fugit, laboriosam nemo repellendus, a ea pariatur dolor quam eum ipsam, tempore, cum molestiae ut!
+				</p>
+			</div>
+			
+			<!-- Si una de las columnas tuviera mas texto se solaparían, por esto es que se pone lo siguiente http://getbootstrap.com/css/#grid-responsive-resets -->
+			<div class="clearfix visible-sm-block"></div>
+
+			<!-- Ejemplo de columna que desplaza a la siguiente:
+			<div class="color1 col-xs-12 col-sm-6 col-md-3 col-md-offset-3"> -->
+			<div class="color1 col-xs-12 col-sm-6 col-md-3">
+				<p>
+					<h3>Columna 3</h3>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus vero obcaecati ad minima laborum, reprehenderit maiores velit. Vero pariatur nam repellat repudiandae et praesentium beatae aut, quae, voluptatem consequuntur dolore.
+				</p>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-3">
+				<p>
+					<h3>Columna 4</h3>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum cumque incidunt at earum sit, dolorem accusantium optio repellat iusto quas officia ipsam. Ullam quisquam, maiores deleniti aut vero harum quis!
+				</p>
+			</div>	
+		</div>
+    </div>
+
+	<footer>
+		<div class="container">
+			<h3>Rodrigo Garay</h3>
+		</div>
+	</footer>
+
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
